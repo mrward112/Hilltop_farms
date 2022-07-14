@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Playfair+Display:ital@0;1&family=Satisfy&display=swap');
+
+header{
+  z-index: 1;
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    max-height: 200px;
+    background-color: #C52233;   
+    margin-bottom: 150px; 
+    font-family: Playfair+Display;
+}
+.homelink:hover {
+  background-color: #74121D;
+  color: white;
+}
+.menulink:hover {
+  background-color: #74121D;
+  color: white;
+}
+.schedulelink:hover {
+  background-color: #74121D;
+  color: white;
+}
+.contactlink:hover {
+  background-color: #74121D;
+  color: white;
+}
+#logolink{
+  grid-column: 3/4;
+  margin: auto;
+  margin-bottom: -30px;
+}
+  body{
+    margin: 0 auto;
+    background-color:#F7DBA7;
+}
+  
+
+/* homepage css */
+.hero-img {
+  width: 100%;
+  grid-column: 1/4;
+  margin-top: -200px;
+  z-index: -1;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.homepage1{
+  background-color:#F7DBA7 ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  z-index: -1;
+  max-height: 200px;
+}
+.oldbarn {
+  /* border-radius: 10%; */
+width: 75%;
+height: 90%;
+padding-left: 20%;
+justify-content: right;
+}
+.oldbarntext {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-top: -50%;
+  justify-content: center;
+}
+.different {
+  border-radius: 4%;
+grid-column: 3/4;
+grid-row: 4/5;
+margin-top: 100px;
+width: 400px;
+/* height: 500px; */
+}
+.differenttext {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  /* text-align: center; */
+  margin-top: 150px;
+  padding-right: 50px;
+}
+
+  /* universal footer */
+  footer {
+    margin-top: 200px;
+    background-color: #C52233;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 200px;
+    text-align: center;
+  }
+  .social {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    grid-column: 2/3;
+    grid-row: 1;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* web component */
+/* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
