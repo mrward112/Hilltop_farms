@@ -6,7 +6,52 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hilltop Farms | Menu</title>
+    <style>
+        .container {
+          position: relative;
+          width: 50%;
+          max-width: 300px;
+        }
+        
+        .image {
+          display: block;
+          width: 100%;
+          max-width: 300px;
+          height: auto;
+        }
+        
+        .overlay {
+          max-width: 300px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: #74121D;
+        }
+        
+        .container:hover .overlay {
+          opacity: 1;
+        }
+        
+        .text {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        </style>
 </head>
+
 <body>
     <header>
         <a href="index.html"> 
@@ -24,14 +69,19 @@
 
 
     <main>
-             
-        
+
+        <!-- web component -->
+            <body>
+            
+
+
+        <!-- menu examples -->
+        <!-- <img src="#" alt="picture of">
         <img src="#" alt="picture of">
         <img src="#" alt="picture of">
         <img src="#" alt="picture of">
         <img src="#" alt="picture of">
-        <img src="#" alt="picture of">
-        <img src="#" alt="picture of">
+        <img src="#" alt="picture of"> -->
         <h1>What Can You Expect from Us?</h1>
         <a>We provide a large variety of meal plans from Mexican, Western, and Indian cultures. We try hard to give you an authentic taste into these wonderful parts of the world and our society. We can guarantee one thing, that you won’t be dissatisfied with what we provide. We provide a healthy blend of ingredients at affordable rates so that you don’t have to worry as much when it comes time to pay. We want to keep you happy after your event and not have to require some obscenely overpriced food for the quality it was given to you. You deserve better than that.</a>
 
@@ -40,7 +90,13 @@
        <div>     
         <h2>Western Buffet</h2>
         <a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maiores minus dolorum ipsam ipsum culpa voluptatem quisquam repellendus reprehenderit iste! Dolorem nisi obcaecati ab dolore nihil vel neque! Blanditiis, repellendus.</a>
-        <img src="images/baconbite.jpg" alt="picture of baconbites">
+        <div class="container">
+            <img src="images/baconbite.jpg" alt="picture of baconbites" class="image">
+            <div class="overlay">
+              <div class="text">Western Buffet</div>
+            </div>
+          </div>
+        <!-- <img src="images/baconbite.jpg" alt="picture of baconbites"> -->
         <img src="images/beef.jpg" alt="picture of steak">
        </div>
        
@@ -61,7 +117,7 @@
        </div>
 
 
-       <!-- Extra web content -->
+       <!-- Extra web content
        <label class="container">American
         <input type="checkbox" checked="checked">
         <span class="checkmark"></span>
@@ -80,7 +136,7 @@
       <label class="container">Chinese
         <input type="checkbox">
         <span class="checkmark"></span>
-      </label>
+      </label> -->
     </main>
 
 
