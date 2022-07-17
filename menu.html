@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hilltop Farms | Menu</title>
     <style>
-        .container {
+
+        /* component css */
+        /* .container {
           position: relative;
           width: 50%;
           max-width: 300px;
@@ -19,7 +21,6 @@
           max-width: 300px;
           height: auto;
         }
-        
         .overlay {
           max-width: 300px;
           position: absolute;
@@ -48,7 +49,118 @@
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
           text-align: center;
+        } */
+
+
+
+        /* header css */
+        header{
+            max-height: 200px;
         }
+        .homepage{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .homelink{
+            font-family: Satisfy;
+            text-decoration: none;
+            text-align: center;
+            padding: 25%;
+            color: black;
+            font-size: xx-large;
+        }
+        .menulink{
+            font-family: Satisfy;
+            text-decoration: none;
+            text-align: center;
+            padding: 25%;
+            color: black;
+            font-size: xx-large;
+        }
+        .schedulelink{
+            font-family: Satisfy;
+            text-decoration: none;
+            text-align: center;
+            padding: 25%;
+            color: black;
+            font-size: xx-large;
+        }
+        .contactlink{
+            font-family: Satisfy;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            padding: 25%;
+            font-size: xx-large;
+        }
+
+
+
+
+        /* main body organization css */
+        main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-column: 2/3;
+            padding-left: 150px;
+            padding-right: 150px;
+            max-height: 1500px;
+        }
+        .expect_title{
+            grid-column: 1/4;
+            grid-row: 1;
+            text-align: center;
+
+        }
+        .expect_paragraph{
+            grid-column: 1/4;
+            grid-row: 2;
+            text-align: center;
+        }
+        .western{
+            grid-column: 1/4;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .western_pic{
+            display: flex;
+            justify-content: center;
+            grid-row: 4/5;
+            grid-column: 1/4;
+            height: 300px;
+            width: 300px;
+            gap: 150px;
+            margin-left: 45%;
+        }
+        .beef_pic{
+
+        }
+        .burger_pic{
+
+        }
+        .pizza_pic{
+
+        }
+
+
+        .mexican{
+            grid-column: 1/4;
+            padding-top: 30px;
+        }
+
+        .indian{
+            grid-row: 7/8;
+            grid-column: 1/4;
+            padding-top: 30px;
+        }
+
+        .menu_tool{
+            grid-row:9/10;
+            font-size: xx-large;
+            padding-top: 30px;
+        }
+
         </style>
 </head>
 
@@ -57,21 +169,17 @@
         <a href="index.html"> 
             <img class="logo"  src="images/hilltop_logo.png" alt="Hilltop Farms Logo">
         </a>
-        <nav>
             <!-- make sure to update these nav links! -->
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="schedule.html">Schedule</a>
-            <a href="#">Contact us</a>
-        </nav>
+            <a class="homelink" href="index.html">Home</a>
+            <a class="menulink" href="menu.html">Menu</a>
+            <a class="schedulelink" href="schedule.html">Schedule</a>
+            <a class="contactlink" href="#">Contact us</a>
+
     </header>
 
 
 
     <main>
-          
-
-
         <!-- menu examples -->
         <!-- <img src="#" alt="picture of">
         <img src="#" alt="picture of">
@@ -79,61 +187,50 @@
         <img src="#" alt="picture of">
         <img src="#" alt="picture of">
         <img src="#" alt="picture of"> -->
-        <h1>What Can You Expect from Us?</h1>
-        <a>We provide a large variety of meal plans from Mexican, Western, and Indian cultures. We try hard to give you an authentic taste into these wonderful parts of the world and our society. We can guarantee one thing, that you won’t be dissatisfied with what we provide. We provide a healthy blend of ingredients at affordable rates so that you don’t have to worry as much when it comes time to pay. We want to keep you happy after your event and not have to require some obscenely overpriced food for the quality it was given to you. You deserve better than that.</a>
+        <h1 class="expect_title">What Can You Expect from Us?</h1>
+        <a class="expect_paragraph">We provide a large variety of meal plans from Mexican, Western, and Indian cultures. We try hard to give you an authentic taste into these wonderful parts of the world and our society. We can guarantee one thing, that you won’t be dissatisfied with what we provide. We provide a healthy blend of ingredients at affordable rates so that you don’t have to worry as much when it comes time to pay. We want to keep you happy after your event and not have to require some obscenely overpriced food for the quality it was given to you. You deserve better than that.</a>
 
 
             <!-- Update the buffet descriptions!! -->
-       <div>     
+       <div class="western">     
         <h2>Western Buffet</h2>
-        <a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maiores minus dolorum ipsam ipsum culpa voluptatem quisquam repellendus reprehenderit iste! Dolorem nisi obcaecati ab dolore nihil vel neque! Blanditiis, repellendus.</a>
-        <div class="container">
+        <a>Enjoy an exquisetly tender steak that has been smoked to perfection. Not your style? What about a handmade burger that has been spiced with our house secret blend of spices that will leave your mouth watering. Of course, there's always the pizza option that you can trust will saite your appetite until you come asking for more.</a>
+        </div>
+
+        <div class="western_pic">
+            <img class="beef_pic" src="images/steak.png" alt="picture of steak">
+            <img class="burger_pic" src="images/cheeseburger.png" alt="picture of burger">
+            <img class="pizza_pic" src="images/pizza.jpg" alt="picture of pizza">
+        </div>
+
+<!-- web component html -->
+        <!-- <div class="container">
             <img src="images/baconbite.jpg" alt="picture of baconbites" class="image">
             <div class="overlay">
               <div class="text">Western Buffet</div>
             </div>
-          </div>
-        <!-- <img src="images/baconbite.jpg" alt="picture of baconbites"> -->
-        <img src="images/beef.jpg" alt="picture of steak">
-       </div>
+          </div> -->
+
+
+
+
+
        
-       <div>
+       <div class="mexican">
         <h2>Mexican Options</h2>
         <a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dicta doloribus ea sapiente deserunt esse nulla repellendus nostrum deleniti officia nobis accusantium, voluptas culpa voluptatem magni dolorem reiciendis, officiis non!</a>
-        <img src="images/pizza.jpg" alt="picture of pizza">
        </div>
        
-       <div>
+       <div class="indian">
         <h2>Indian Cusine</h2>
         <a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste omnis nam consectetur vero? Natus, facilis? Veritatis blanditiis repellat laboriosam? Ea, nihil. Sapiente laudantium voluptates dolor officia iste sequi vitae dicta.</a>
        </div> 
 
-       <div>
+       <div class="menu_tool">
         <h1>Menu Selection</h1>
         <a>Coming soon!</a>
        </div>
 
-
-       <!-- Extra web content
-       <label class="container">American
-        <input type="checkbox" checked="checked">
-        <span class="checkmark"></span>
-      </label>
-      
-      <label class="container">Indian
-        <input type="checkbox">
-        <span class="checkmark"></span>
-      </label>
-      
-      <label class="container">Mexican
-        <input type="checkbox">
-        <span class="checkmark"></span>
-      </label>
-      
-      <label class="container">Chinese
-        <input type="checkbox">
-        <span class="checkmark"></span>
-      </label> -->
     </main>
 
 
