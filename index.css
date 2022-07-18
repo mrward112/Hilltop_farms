@@ -4,11 +4,10 @@ header{
   z-index: 1;
   display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
     height: 100%;
     width: 100%;
     background-color: #C52233;   
-    margin-bottom: 150px; 
+    margin-bottom: 100px; 
     font-family: Playfair+Display;
 }
 .homelink:hover {
